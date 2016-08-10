@@ -1,2 +1,3 @@
-# notes
-:orange_book: notes
+# :orange_book: Notes
+
+Notes on programming I wrote.
