@@ -65,5 +65,6 @@ klass = Klass.new
 
 klass.methods.keep_if{ |method| false == blank.methods.include?(method)
 
+=> [:hello, :woo] 
 ```
 
