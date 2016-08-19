@@ -2,11 +2,15 @@
 
 - ** How do I print all the attributes set on the class? **
 
+  _Answered by @jcoglan_
+
   You can use [`Object#instance_variables`][instance variables].
   It gives you an array of symbols representing the names of any instance variables
   currently stored for the object
 
 - ** How do I print all the user set methods on a Class? **
+
+  _Answered by @jcoglan_
 
   Using [`Module#instance_methods`][instance methods] sort-of does this, depending on what you want. `a_class.instance_methods(false)`
   returns methods defined directly in that class, not methods it inherited, so if
@@ -16,6 +20,8 @@
   
 - ** 'Capture groups' exist in regex land but what do we do with these groups once
 captured? **
+
+  _Answered by @AgentAntelope_
 
   The normal way to do this is by using the `match` method, and then calling
   `captures` on the resulting `MatchData`:
