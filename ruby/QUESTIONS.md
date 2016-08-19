@@ -1,5 +1,11 @@
 # Questions
 
+## Unanswered
+
+- **How do you call functions from other files, a lá node module exports?**
+
+## Answered
+
 - **How do I print all the attributes set on the class?**
 
   _Answered by @jcoglan_

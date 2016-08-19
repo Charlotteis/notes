@@ -1,5 +1,13 @@
 # Questions
 
+## Unanswered
+
+- **What is HAProxy and what is an example of why you would use it?**
+
+- **What is BOSH and what is an example of why you would use it?**
+
+## Answered
+
 - **What is virtualisation?**
 
   _Answered by @LewisCowper_
