@@ -1,6 +1,6 @@
 # Questions
 
-- ** What is virtualisation? **
+- **What is virtualisation?**
 
   _Answered by @LewisCowper_
 

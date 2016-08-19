@@ -1,6 +1,6 @@
 # Questions
 
-- ** How do I print all the attributes set on the class? **
+- **How do I print all the attributes set on the class?**
 
   _Answered by @jcoglan_
 
@@ -8,7 +8,7 @@
   It gives you an array of symbols representing the names of any instance variables
   currently stored for the object
 
-- ** How do I print all the user set methods on a Class? **
+- **How do I print all the user set methods on a Class?**
 
   _Answered by @jcoglan_
 
@@ -51,8 +51,8 @@
   => [:hello, :woo] 
   ```
   
-- ** 'Capture groups' exist in regex land but what do we do with these groups once
-captured? **
+- **'Capture groups' exist in regex land but what do we do with these groups once
+captured?**
 
   _Answered by @AgentAntelope_
 
@@ -64,7 +64,7 @@ captured? **
    # => ["oo"]
   ```
 
-- ** How do you call functions from other files, a lá node module exports? **
+- **How do you call functions from other files, a lá node module exports?**
 
 [instance variables]: http://ruby-doc.org/core-2.3.1/Object.html#method-i-instance_variables
 [instance methods]: http://ruby-doc.org/core-2.3.1/Module.html#method-i-instance_methods
