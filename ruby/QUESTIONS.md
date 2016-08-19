@@ -70,7 +70,7 @@ captured?**
    # => ["oo"]
   ```
 
-- **How can I mock a request in Rspec?**
+- **How can I mock a request in RSpec?**
 
   _Answered by @charlotteis_
 
