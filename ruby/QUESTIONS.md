@@ -18,6 +18,39 @@
   `Kernel`, but you also won't get methods from other ancestors either. If this
   is a problem you can use [`Module#ancestors`][ancestors] to walk up the tree.
   
+  _Answered by @andy-bell_
+
+  Using the `methods` call will return all the methods assigned to an object
+  (the methods will belong to the instance of the object, not the class object.
+  The methods appear to be returned in an order which prioritises the public
+  methods defined by the user (it will not return private methods)
+
+  As it returns an array, there may be a way of trimming down the array to only
+  return the values unique to that class, but that would likely involve creating
+  an instance object of an "empty" class and compare the two with something like
+  this:
+
+  ```ruby
+  class Blank
+  end
+
+  class Klass
+    def hello
+      puts "hello"
+    end
+    def woo
+      puts "hello"
+    end
+  end
+
+  blank = Blank.new
+  klass = Klass.new
+
+  klass.methods.keep_if{ |method| false == blank.methods.include?(method)
+
+  => [:hello, :woo] 
+  ```
+  
 - ** 'Capture groups' exist in regex land but what do we do with these groups once
 captured? **
 
