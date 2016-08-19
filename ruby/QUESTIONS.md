@@ -70,7 +70,32 @@ captured?**
    # => ["oo"]
   ```
 
-- **How do you call functions from other files, a lá node module exports?**
+- **How can I mock a request in Rspec?**
+
+  _Answered by @charlotteis_
+
+  By using the `webmock/rspec` library (`gem install webmock`) you can stub a
+  request and response.
+
+  For example:
+
+  ```shell
+  $ gem install webmock
+  ```
+
+  ```ruby
+  require `webmock/rspec`
+
+  describe 'downloader' do
+    url = 'http://charlotteis.co.uk'
+    stub = stub_request(:get, url).to_return(body: 'buttssttub')
+
+    # Fake module & method, for demonstration purposes only
+    Downloader.download(url)
+
+    expect(stub).to have_been_requested
+  end
+  ```
 
 [instance variables]: http://ruby-doc.org/core-2.3.1/Object.html#method-i-instance_variables
 [instance methods]: http://ruby-doc.org/core-2.3.1/Module.html#method-i-instance_methods
