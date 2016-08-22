@@ -6,6 +6,8 @@
 
 - **What is BOSH and what is an example of why you would use it?**
 
+- **What is (a) Cloud Foundry**
+
 ## Answered
 
 - **What is virtualisation?**
