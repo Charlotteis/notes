@@ -8,7 +8,17 @@
 
 - **What is (a) Cloud Foundry**
 
+- **What is a container?**
+
 ## Answered
+
+- **What is `/dev/null`?**
+
+  _Answered by @charlotteis_
+
+  `/dev` is where you mount devices (like a mouse, keyboard, CPU), so
+  `/dev/null` is where you can put any input you don't care about. `null`
+  discards any information that is written to it.
 
 - **What is virtualisation?**
 
