@@ -3,6 +3,10 @@
 ## Unanswered
 
 - **How do you call functions from other files, a lá node module exports?**
+- **How does scoping work in Ruby?**
+- **What is Rack?**
+- **Why use Puma over WEBrick?**
+- **How do you vendor gems, and why?**
 
 ## Answered
 
@@ -23,7 +27,7 @@
   you call it on your own class you won't get anything inherited from `Object` and
   `Kernel`, but you also won't get methods from other ancestors either. If this
   is a problem you can use [`Module#ancestors`][ancestors] to walk up the tree.
-  
+
   _Answered by @andy-bell_
 
   Using the `methods` call will return all the methods assigned to an object
@@ -54,9 +58,9 @@
 
   klass.methods.keep_if{ |method| false == blank.methods.include?(method)
 
-  => [:hello, :woo] 
+  => [:hello, :woo]
   ```
-  
+
 - **'Capture groups' exist in regex land but what do we do with these groups once
 captured?**
 
