@@ -4,7 +4,6 @@
 
 - **What is BOSH and what is an example of why you would use it?**
 - **What is (a) Cloud Foundry**
-- **What is a container?**
 - **What is an outbound service proxy (OSP)?**
 - **What is the 'ambassador pattern'?**
 - **What is the difference between Diego & DEA?**
