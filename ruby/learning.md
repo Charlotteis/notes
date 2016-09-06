@@ -26,9 +26,24 @@ like `puts`
 
 - Iterator: progresses through a list of items one by one
 - Range: a continuous sequence
-    - `3..11`: from/to and includingm 3 and 11
-    - `3...11`: fron 3 to 11, excluding 11
+    - `3..11`: from/to and including 3 and 11
+    - `3...11`: from 3 to 11, excluding 11
 - `===`: is the thing on the right a member or part of the thing on the left?
+
+- 'puts' converts `.to_s` before it displays output
+- `self`: refers to whatever object you are in. Like `this` in JS.
+- variables _aren't_ objects
+- `each` is an array method that acts like a loop, and is called an **iterator**
+- `do` is only used with iterators
+- `3.times do end` is an iterator and an integer method.
+
+- Array is ordered
+- Hash is unordered
+- Array key is a number
+- Hash key can be any object
+
+- Instance Variable: An objects variables. `@example`. Lasts as long as the
+object itself does.
 
 ## Regular Expressions (regex)
 
@@ -36,12 +51,12 @@ like `puts`
 - substitute all: `"hello, hello, world!".gsub('hello', 'butts')`
 - `\A` anchors to absolute start
 - `\z` anchors to absolute end
-- `\^` anchors to line start
+- `\^` anchors to line start`
 - `$/` anchors to line end
 - `.` equals any char
 - `+` matches one or more
 - `*` matches zero or more
-- `{x, y}` match at least 'x' occurences and at most 'y'
+- `{x, y}` match at least 'x' occurrences and at most 'y'
 - `/[aeiou]/`, `/[a-m]/` match against specific character set
 - `=~` is the matching operator
     - `puts "yay" if "butts" =~ /aeiou/`
@@ -55,3 +70,8 @@ like `puts`
 - `time.year`, `time.yday`, `time.wday`
 - `time.zone`, `time.localtime`, `time.gmtime`
 - strftime for formatting
+
+## Blocks & Procs
+
+- Take some code, wrap it in an object (`Proc`), store it in a variable
+- Like a method, but isn't bound to an object (it _is_ and object)

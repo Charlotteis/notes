@@ -7,6 +7,9 @@
 - **What is Rack?**
 - **Why use Puma over WEBrick?**
 - **How do you vendor gems, and why?**
+- **What is the scope operator (`::`)?**
+- **Describe Implicit vs. Explicit conversion**
+- **Why would you use a Proc over a method?**
 
 ## Answered
 
