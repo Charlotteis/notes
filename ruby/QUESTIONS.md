@@ -10,6 +10,7 @@
 - **What is the scope operator (`::`)?**
 - **Describe Implicit vs. Explicit conversion**
 - **Why would you use a Proc over a method?**
+- **What is the `||=` operator?**
 
 ## Answered
 
