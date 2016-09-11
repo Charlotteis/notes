@@ -165,6 +165,7 @@ If you want to use it _now, now. now_ you can use a [polyfill], but the idea
 of adding more JavaScript just to use some CSS feels icky to me.
 
 [codepen]: http://codepen.io/Charlotteis/pen/RGWBLk
+[codepen2]: http://codepen.io/Charlotteis/pen/GjpBxQ
 [support]: #support
 [sitepoint]: https://www.sitepoint.com/introducing-the-css-grid-layout/
 [example]: http://codepen.io/Charlotteis/pen/ALWggv
