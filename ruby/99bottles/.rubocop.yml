@@ -1,0 +1,8 @@
+#.rubocop.yml
+AllCops:
+  TargetRubyVersion: 2.3
+
+# If you are using the --enable-frozen-string-literal flag
+# You might also want to add this:
+Style/FrozenStringLiteralComment:
+  Enabled: false
