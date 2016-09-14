@@ -11,6 +11,8 @@
 - **Describe Implicit vs. Explicit conversion**
 - **Why would you use a Proc over a method?**
 - **What is the `||=` operator?**
+- **What does a `lambda` do?**
+- **What does `call` do?**
 
 ## Answered
 
