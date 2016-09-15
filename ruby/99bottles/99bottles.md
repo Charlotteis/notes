@@ -75,6 +75,29 @@ type of condition.
 - 'thoughtful acts'
 - One needs to write tests to confirm the _what_ of code, not the _how_
 - The tests should not be tightly coupled to the code, else any code change
-can make the suite very fickle.  
+can make the suite very fickle.
+
+## Chapter Three - Unearthing Concepts
+
+- Shameless green has little regard for changeability
+- Duplication and procedurality too
+- What happens when the requirements change?
+- New requirement: say '1 six-pack' wherever the code previously said '6 bottles'
+- Open/Closed principle: open for extension, closed for modification. Code is open to a new requirement when you can meet that new requirement without
+changing existing code
+- SOLID:
+  - Single Responsibility
+  - Open/Closed
+  - Liskov Substitution: subclasses should be substitutable for their
+    superclasses
+  - Interface Segregation: objects should not be forced to depend on methods
+    they don't use
+  - Dependency Inversion: Depend on abstractions, not concretions
+
+- Refactoring: changing software in a way that does not alter current
+behaviour of the code, yet improves its internal structure
+- When implementing a new requirement, refactor to allow for it first, then
+implement
+- Never change tests during a refactoring
 
 [99Bottles]: http://www.sandimetz.com/99bottles/
