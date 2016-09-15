@@ -64,4 +64,17 @@ many qualities of what one expects in 'good code'. Duplication, few
 abstractions
 - No provision for change
 
+## Chapter Two - Test Driving Shameless Green
+
+- Test Driven Development: writing tests before the code.
+- 'Red, Green, Refactor'
+- The first test is often the most difficult to write
+- `elsif` conditions are usually wildly different, `case` states that all
+following conditions are explicitly referring to fundamentally the same
+type of condition.
+- 'thoughtful acts'
+- One needs to write tests to confirm the _what_ of code, not the _how_
+- The tests should not be tightly coupled to the code, else any code change
+can make the suite very fickle.  
+
 [99Bottles]: http://www.sandimetz.com/99bottles/
