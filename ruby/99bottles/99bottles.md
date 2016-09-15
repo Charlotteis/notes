@@ -100,4 +100,13 @@ behaviour of the code, yet improves its internal structure
 implement
 - Never change tests during a refactoring
 
+## Chapter Four - Practicing Horizontal Refactoring
+
+- N/A
+
+## Chapter Five - Not yet published
+
+## Chapter Six - Not yet published
+
+
 [99Bottles]: http://www.sandimetz.com/99bottles/
