@@ -14,6 +14,9 @@
 - **What does a `lambda` do?**
 - **What does `call` do?**
 - **Why use `%w` for an array of words?**
+- **What does `@@` before a variable name denote?**
+- **What is a class instance var and how do I use it over `@@`?**
+- **Is there a command to create a default ruby project directory?**
 
 ## Answered
 
