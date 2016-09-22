@@ -4,6 +4,7 @@
 
 - **What is a git submodule, and why use them?**
 - **What are the SOLID principles?**
+- **What is a finite state machine?**
 
 ## Answered
 
