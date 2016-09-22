@@ -13,6 +13,7 @@
 - **What is the `||=` operator?**
 - **What does a `lambda` do?**
 - **What does `call` do?**
+- **Why use `%w` for an array of words?**
 
 ## Answered
 
