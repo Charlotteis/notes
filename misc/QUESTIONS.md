@@ -5,6 +5,8 @@
 - **What is a git submodule, and why use them?**
 - **What are the SOLID principles?**
 - **What is a finite state machine?**
+- **Every time I deploy to Heroku, does the database get wiped?**
+- **What is duck typing?**
 
 ## Answered
 

@@ -17,6 +17,7 @@
 - **What does `@@` before a variable name denote?**
 - **What is a class instance var and how do I use it over `@@`?**
 - **Is there a command to create a default ruby project directory?**
+- **Why are symbols better used as hash keys over strings?** - Ruby
 
 ## Answered
 
