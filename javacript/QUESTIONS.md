@@ -2,6 +2,6 @@
 
 ## Unanswered
 
--- **What is `this`?**
+- **What is `this`?**
 
 ## Answered
