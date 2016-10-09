@@ -147,3 +147,47 @@ head :: [a] -- a
 -- all the rest of the elements
 tail :: [5,6,7] -- [6,7]
 ```
+
+## Booleans && Operators
+
+- `True /= False`
+- `True == True`
+- Haskell cannot compare the values of things with different types
+- `elem` tests for list membership. e.g. `elem 1 [1,2,3]`
+- infix operator: 43 `max` 21
+- any haskell infix can be written as a prefix `(+) 1 1`
+
+- `xor`: exclusive or. returns true if the booleans are different
+
+## `zip`
+
+```haskell
+zip [1,2,3] [4,5,6]
+-- [(1,4), (2,5), (3,6)]
+```
+
+- `zip` & `zip3`
+- with two lists of unequal length, zip will only zip to the length of the
+  shorter list
+- `zipWith` used to combine lists by providing it a function
+
+```haskell
+zipWith max [1,2,3] [0,2,4]
+-- [1,2,4]
+```
+
+- `zip` implemented with `zipWith`
+
+```haskell
+zipWith (\x->(\y->(x,y))) [1,2,3] [4,5,6]
+-- [(1,4),(2,5),(3,6)]
+```
+
+## I/O (Input and Output)
+
+- IO Monad
+- When a function is using I/O its type must contain IO
+- IO Monad ensures that I/O occurs in a fixed sequence
+- `putStrLn` and `getLine`
+- Unlike pure functions, I/O operations are impure because they influence
+  and interact with the outside world (state).
