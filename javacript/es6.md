@@ -33,10 +33,10 @@ const cake = ingredients.map(ingredient => `I put ${ingredient} into my cake.`)
 
 ```javascript
 // Can't do this
-function cakeName(name => console.log(name)}
+// function cakeName(name => console.log(name))
 
 // Can do this
-const cakeName = (name) => {console.log(name)}
+const cakeName = (name) => console.log(name)
 ```
 
 ### `this` does not get rebound
@@ -77,3 +77,37 @@ console.log(add2()) // -> 5
 
 - Don't use for prototype methods.
 - Don't use it when you need the `arguments` object
+
+## Template strings
+
+```javascript
+const name = 'Charlotte'
+const phrase = `Hello, my name is ${name}!`
+console.log(phrase)
+```
+
+- Allows for nice multi-line strings
+
+```javascript
+const markup = `
+  <div class='person'>
+    <h2>${person.name}</h2>
+  </div>
+`
+
+document.body.innerHTML = markup
+```
+
+- Tagged templates
+
+```javascript
+  function cakeify(strings ...values) {
+    let str = ''
+    strings.forEach((string, i) => {
+      str += `${string} cake ${(values[i] || '')} cake`
+    })
+    return str
+  }
+
+  const sentence = cakeify`My name is Charlotte, and I love cake!`
+```
