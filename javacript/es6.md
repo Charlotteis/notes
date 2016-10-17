@@ -101,7 +101,7 @@ document.body.innerHTML = markup
 - Tagged templates
 
 ```javascript
-  function cakeify(strings ...values) {
+  function cakeify(strings, ...values) {
     let str = ''
     strings.forEach((string, i) => {
       str += `${string} cake ${(values[i] || '')} cake`
@@ -111,3 +111,49 @@ document.body.innerHTML = markup
 
   const sentence = cakeify`My name is Charlotte, and I love cake!`
 ```
+
+```javascript
+function name(thing) {
+  let name = ${thing + thing}
+}
+```
+
+## New string methods
+
+- startsWith, endsWith, includes, repeat.
+
+## Destructuring
+
+- Objects
+```javascript
+const cake = {
+  product: 'Gateau',
+  flavour: 'Chocolate',
+  price: 24.99
+}
+
+const { product: name, flavour, price } = cake;
+```
+
+- Arrays
+```javascript
+const user = ['Charlotte', 'Spencer', 25, 'fell', 'mal', 'tef']
+const [first, last, age, ...friends] = user
+[first, last] = [last, first]
+```
+
+## for...of
+
+```javascript
+for (const [i, thing] of things.entries()) {
+  console.log(i, thing)
+}
+```
+
+- handles continue and break (unlike forEach)
+- ignores newly added prototype methods to the iterable (unlike for...in)
+
+## New Array methods
+
+- Array.from()
+- Array.of()
