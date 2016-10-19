@@ -9,6 +9,6 @@
   It also takes care of any transpiling: like ES6 to regular JavaScript, SCSS to CSS and so on. To do that it uses tools like postcss and babel.
   
 - **How does webpack bundle things?**
-  It basically replaces all your `import` statements with calls to a special 'require()' function. That function will be added to your code automatically. `require()` will run the code in your modue and return an object that contains everything that you `export`ed from your module.
+  It basically replaces all your `import` statements with calls to a special 'require()' function. That function will be added to your code automatically. `require()` will run the code in your module and return an object that contains everything that you `export`ed from your module.
  
   It then puts all of those trasnformed modules into a single file (or multiple ones in more complex configurations).
