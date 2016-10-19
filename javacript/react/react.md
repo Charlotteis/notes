@@ -90,3 +90,25 @@ Cake.propTypes = {
 - `react-router` shows and hides components depending on the URL you are
   visiting
 - Even routing is it's own component!
+
+## Events
+
+- Events are wrapped in cross browser thing called SyntheticEvent
+- Events are done inline, unlike jQuery and listeners
+- `onClick` and `onSubmit` inline
+- Avoid directly manipulating the DOM, our concern is with the data
+
+## Context
+
+- Declaring something at the top level so as to make it available to
+  everything further down the component tree
+- `Cake.contextTypes`
+
+## State
+
+- A representation of all of the data within the app
+- Each component can have its own state
+- Updating state in one place means the update happens in all the other
+  places in which that datapoint is referenced
+- When updating state: get current state, update state, tell React you
+  updated the state (`this.setState`)
