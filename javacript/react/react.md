@@ -48,7 +48,11 @@ export default Cake
 
 ## JSX
 
-- JSX allows us to write HTML directly in our JavaScript
+- JSX looks like HTML but it is not HTML
+- JSX gets transpiled into JavaScript functions by [babel](https://babeljs.io/) 
+- The [Babel REPL](https://babeljs.io/repl/) demonstrates the JSX to JavaScript transformation
+- JSX helps you to visualise the layout of your component
+- Having JSX close to the code that interprets properties and reacts to state changes makes it easy to reason about the behaviour and appearance of your component in isolation from the rest of your app.
 - JSX can only return one parent element at a time
 - have to use `className` instead of `class` because `class` is a reserved
   word
