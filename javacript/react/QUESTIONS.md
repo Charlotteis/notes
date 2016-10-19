@@ -5,6 +5,7 @@
 - **How does React interact with a database to save state?**
 - **What is React like in terms of accessibility?**
 - **Can our app work without JavaScript?**
+- **How do you write tests for React?**
 
 ## Answered
 
