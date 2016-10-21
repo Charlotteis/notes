@@ -26,4 +26,8 @@
 
 - **Can our app work without JavaScript?**
 
-  React itself [doesn't need a Browser](https://facebook.github.io/react/docs/environments.html), which means you can [set up server-side rendering](https://reactjsnews.com/isomorphic-javascript-with-react-node). This will transform your React app in a regular server-side app. There are some tradeoffs for that, not all libraries in the React ecosystem can work in a Node environment. Alternatively, if your biggest constrain is SEO, you can set up a mininal server-side app that renders relevant data in a `<noscript>` tag, [like Discourse does](https://eviltrout.com/2013/06/19/adding-support-for-search-engines-to-your-javascript-applications.html).
+  React itself [doesn't need a Browser][no browser], which means you can [set up server-side rendering][server-side rendering]. This will transform your React app into a regular server-side app. There are some tradeoffs for that, not all libraries in the React ecosystem can work in a Node environment. Alternatively, if your biggest constrain is SEO, you can set up a mininal server-side app that renders relevant data in a `<noscript>` tag, [like Discourse does][SEO].
+
+[no browser]: https://facebook.github.io/react/docs/environments.html
+[server-side rendering]: https://reactjsnews.com/isomorphic-javascript-with-react-node
+[SEO]: https://eviltrout.com/2013/06/19/adding-support-for-search-engines-to-your-javascript-applications.html
