@@ -49,8 +49,8 @@ export default Cake
 ## JSX
 
 - JSX looks like HTML but it is not HTML
-- JSX gets transpiled into JavaScript functions by [babel](https://babeljs.io/) 
-- The [Babel REPL](https://babeljs.io/repl/) demonstrates the JSX to JavaScript transformation
+- JSX gets transpiled into JavaScript functions by [babel]
+- The [Babel REPL] demonstrates the JSX to JavaScript transformation
 - JSX helps you to visualise the layout of your component
 - Having JSX close to the code that interprets properties and reacts to state changes makes it easy to reason about the behaviour and appearance of your component in isolation from the rest of your app.
 - JSX can only return one parent element at a time
@@ -116,3 +116,6 @@ Cake.propTypes = {
   places in which that datapoint is referenced
 - When updating state: get current state, update state, tell React you
   updated the state (`this.setState`)
+
+[babel]: https://babeljs.io/
+[Babel REPL]: https://babeljs.io/repl/
