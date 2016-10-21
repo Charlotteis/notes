@@ -2,11 +2,18 @@
 
 ## Unanswered
 
-- **How does React interact with a database to save state?**
 - **What is React like in terms of accessibility?**
 - **How do you write tests for React?**
 
 ## Answered
+
+- **How does React interact with a database to save state?**
+
+  _Answered by @lnwdr_
+
+  It doesn't. React itself is only concerned with rendering. You will have to add your own persistence.
+  
+  Redux can certainly help (and is the way to go) with that but that's propably off topic here. A straightforward way to talk to a backend API (or local storage) is to have an object that does only that. I like to call those 'services'. For example, a `UserService` could have a `getUserProfile` method that fetches the data from whereever it needs to. In your `UserProfile` react component, you would call this in the `componentDidMount` and `componentWillReceiveProps` hooks and update the component's state accordingly.
 
 - **What is webpack?**
 
