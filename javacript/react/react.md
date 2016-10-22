@@ -117,5 +117,14 @@ Cake.propTypes = {
 - When updating state: get current state, update state, tell React you
   updated the state (`this.setState`)
 
+## React lifecycle hooks
+
+- Entry points into a component
+- During mount or rendering, for example
+- Hook into that process to do certain things, like connecting to a DB
+- `componentWillMount`: work with component just before it is rendered
+- `componentWillUpdate` invoked when props or stage changes
+
+
 [babel]: https://babeljs.io/
 [Babel REPL]: https://babeljs.io/repl/
