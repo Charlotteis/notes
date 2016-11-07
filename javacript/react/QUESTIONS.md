@@ -4,6 +4,7 @@
 
 - **What is React like in terms of accessibility?**
 - **How do you write tests for React?**
+- **What does create-react-app do?**
 
 ## Answered
 

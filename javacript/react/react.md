@@ -1,5 +1,11 @@
 # React.js
 
+- Rather than constantly manipulate the DOM directly on data changes, React
+  rerenders the component that data pertains to
+- React has a fake representation of the DOM, called the _virtual DOM_,
+  which allows us to describe our HTML in JavaScript and React will do the
+  hard work to make sure this gets made into real HTML later
+
 ## Components
 
 - Everything in React, is a _component_
@@ -15,6 +21,10 @@
 - If all your component does is render some HTML, you don't need to create
   an entire `React.component`, instead you can use a stateless functional
   component
+- React elements are immutable. Once you create an element, you can't
+  change its children or attributes.
+- Only elements created via a class can have local state
+- Class components should always call the base constructor with props
 
 ```javascript
 // Instead of this
@@ -69,6 +79,7 @@ export default Cake
 - Pass data to components via props
 - Can do prop validation to ensure the right data is passed to your
   component
+- Props are read only
 
 ```javascript
 class Cake extends React.Component {
@@ -116,6 +127,9 @@ Cake.propTypes = {
   places in which that datapoint is referenced
 - When updating state: get current state, update state, tell React you
   updated the state (`this.setState`)
+- To tell a component it is stateful, define the `getInitialState` function
+  (a lifecycle method) within the component class and return a non-falsey
+  value
 
 ## React lifecycle hooks
 
@@ -124,6 +138,43 @@ Cake.propTypes = {
 - Hook into that process to do certain things, like connecting to a DB
 - `componentWillMount`: work with component just before it is rendered
 - `componentWillUpdate` invoked when props or stage changes
+
+## Animations
+
+- `import CSSTransitionGroup from 'react-addons-css-transition-group'`
+- `<CSSTransitionGroup>`, once named, provides us with classes that are
+  added and removed during the transition. We can hook into these to
+  display our CSS animations
+
+```javascript
+<CSSTransitionGroup
+  component='span'
+  className='count'
+  transitionName='count'
+  transitionEnterTimeout={250}
+  transitionLeaveTimeout={250}>
+  <span key={count}>{count}</span>
+</CSSTransitionGroup>
+```
+
+```css
+.count-enter {
+  &.count-enter-active {
+
+  }
+}
+
+.count-leave {
+  &.count-leave-active {
+
+  }
+}
+```
+
+## Productionising
+
+- use the `react-scripts` module `build` command to make optimise your app
+
 
 
 [babel]: https://babeljs.io/
