@@ -10,6 +10,10 @@
 
 - Everything in React, is a _component_
 - A reusable piece of a code
+- Single Responsibility Principle: each component should do one thing
+- If a component can simultaneous do things (show task, edit task) then
+  we could feasibly split that into a container with two child components:
+  i.e `TaskToggle` > `ShowTask`, `EditTaskatom`
 - Build your own tags that delimit the component
 - Separate component files
 - Each component can have `props`, `state` and `context`
@@ -80,6 +84,8 @@ export default Cake
 - Can do prop validation to ensure the right data is passed to your
   component
 - Props are read only
+- You can only modify props by going to the source, setting the state on
+  the parent component
 
 ```javascript
 class Cake extends React.Component {
