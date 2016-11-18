@@ -128,14 +128,16 @@ Cake.propTypes = {
 ## State
 
 - A representation of all of the data within the app
+- It's best to keep state representation both within your app, and on
+  the server
 - Each component can have its own state
 - Updating state in one place means the update happens in all the other
   places in which that datapoint is referenced
 - When updating state: get current state, update state, tell React you
   updated the state (`this.setState`)
-- To tell a component it is stateful, define the `getInitialState` function
-  (a lifecycle method) within the component class and return a non-falsey
-  value
+- To tell a component it is stateful, define the `getInitialState`
+  function (a lifecycle method) within the component class and return
+  a non-falsey value
 
 ## React lifecycle hooks
 
@@ -180,6 +182,7 @@ Cake.propTypes = {
 ## Productionising
 
 - use the `react-scripts` module `build` command to make optimise your app
+
 
 
 
