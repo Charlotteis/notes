@@ -2,9 +2,6 @@
 
 - Rather than constantly manipulate the DOM directly on data changes, React
   rerenders the component that data pertains to
-- React has a fake representation of the DOM, called the _virtual DOM_,
-  which allows us to describe our HTML in JavaScript and React will do the
-  hard work to make sure this gets made into real HTML later
 
 ## Components
 
@@ -59,6 +56,19 @@ const Cake = (props) => {
 
 export default Cake
 ```
+
+## The Virtual DOM
+
+- React has its own representation of the DOM, called the
+  _virtual DOM_
+- Rather than modify the DOM every time we make a change, we tell
+  React how we'd like our Virtual DOM to look (recreated every
+  time a change occurs) and React does the hard work in manipulating
+  the actual DOM.
+- React's Virtual DOM is a tree of `ReactElements`
+- A `ReactElement` is a representation of a DOM element in the
+  Virtual DOM
+- `ReactElement`s are stateless and immutable
 
 ## JSX
 
