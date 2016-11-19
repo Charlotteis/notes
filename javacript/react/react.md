@@ -69,6 +69,9 @@ export default Cake
 - A `ReactElement` is a representation of a DOM element in the
   Virtual DOM
 - `ReactElement`s are stateless and immutable
+- A `ReactComponent` returns a `ReactElement`, we define functionality
+  like props, state etc. here.
+- `render()` on a `ReactComponent` returns a `ReactElement` tree
 
 ## JSX
 
@@ -90,7 +93,8 @@ export default Cake
 
 ## Props
 
-- Pass data to components via props
+- Component parameters
+- Pass data from parent to child components via props
 - Can do prop validation to ensure the right data is passed to your
   component
 - Props are read only
@@ -112,7 +116,10 @@ Cake.propTypes = {
 ```
 
 - `propTypes` can only be used in Development due to performance reasons,
-  so we definitely still need to do our own client side validation (?)
+  so we definitely still need to do our own client side validation
+- Set default props with `getDefaultProps()`
+- Complex objects set in default props are shared, not copied, accross
+  component instances
 
 ## React Router
 
@@ -133,11 +140,16 @@ Cake.propTypes = {
 
 - Declaring something at the top level so as to make it available to
   everything further down the component tree
+- Implicit props
+- Minimise its usage as it's similar to using a global variable
 - `Cake.contextTypes`
 
 ## State
 
 - A representation of all of the data within the app
+- A component is stateful when it has to hold on to a _dynamic_ piece
+  of data
+- Have as few stateful components as possible
 - It's best to keep state representation both within your app, and on
   the server
 - Each component can have its own state
@@ -145,9 +157,26 @@ Cake.propTypes = {
   places in which that datapoint is referenced
 - When updating state: get current state, update state, tell React you
   updated the state (`this.setState`)
+- When state is updated, the component needs to be re-rendered
 - To tell a component it is stateful, define the `getInitialState`
   function (a lifecycle method) within the component class and return
-  a non-falsey value
+  a non-falsey value, or set `this.state` if using ES6 Classes.
+
+- Use stateless components as much as possible
+
+```javascript
+// Instead of this (when no state needed)
+class Header extends React.Component {
+    render () {
+      return(<h1>{props.headerText}</h1>)
+    }
+}
+
+// Try this
+const Header = function(props) {
+  return (<h1>{props.headerText}</h1>)
+}
+```
 
 ## React lifecycle hooks
 
@@ -192,6 +221,10 @@ Cake.propTypes = {
 ## Productionising
 
 - use the `react-scripts` module `build` command to make optimise your app
+
+## Forms
+
+
 
 
 
