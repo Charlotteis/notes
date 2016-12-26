@@ -9,7 +9,7 @@ _For the [Browser] Render Optimisation course_
 - We have 16ms to render a frame, if we want to render at 60fps
 - Incorporating other work the browser has to do, it's more like 10-12ms
 
-# To render a single frame:
+## To render a single frame:
 
 - Browser makes a get request
 - Request returns an HTML response
