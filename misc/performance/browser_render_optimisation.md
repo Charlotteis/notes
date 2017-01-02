@@ -40,6 +40,42 @@ _For the [Browser] Render Optimisation course_
 - `transform` and `opacity` are the best properties to change because they only
   trigger the Composite action
 
+## Application Lifecycles
+
+- RAIL: Response, Animations, Idle, Load
+  - Load, Idle, Animation, Response (the right order)
+
+### Load & Idle
+
+- Users want to load quickly
+- Initial load should be done in one second, critical resources only
+- After load, the app is idle and waiting for user interaction
+- In the idle blocks, we can do things we deferred to get that one second page
+  load
+- Image assets, videos and comments sections can be loaded later
+- Idle actions should only be done in 50ms chunks
+
+### Response
+
+- React to user input without delay
+- Need to respond within 100ms
+
+### Animation
+
+- Animation must be responsive in less than 16ms to get 60fps
+- FLIP: First Last Invert Play
+  - Calculate the animations first position
+  - Calculate the animations last position
+  - Invert the animation, doing it backwards (moving last to first)
+  - After that one expensive transition, you can play new animations forward
+- Use `window.requestAnimationFrame()` when you want to update your animation
+  on screen. It's effectively waiting a frame, so your animation appears once
+  changing style properties through JavaScript
+- Anything requiring movement or finger on screen interaction should run at
+  60fps
+- Avoid requesting external objects during the Animation phase (like a spinner
+  .gif)
+-
 
 
 
