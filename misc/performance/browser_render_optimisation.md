@@ -75,7 +75,13 @@ _For the [Browser] Render Optimisation course_
   60fps
 - Avoid requesting external objects during the Animation phase (like a spinner
   .gif)
--
+
+## Chrome Dev Tools
+
+- The timeline
+- Make sure to test perf on actual devices, emulation in devtools is not
+  representative.
+- Run timeline tests Incognito, to avoid extension interference
 
 
 
