@@ -1,6 +1,7 @@
 # Decorators
 
-Before decorators, you might heavily rely on subclassing.
+I have a cake, but that cake might come in a number of varieties. Without
+decorators, you might create subclasses.
 
 ```ruby
 class Cake
@@ -62,4 +63,4 @@ double_icing_with_sprinkles = Icing.new(Icing.new(Sprinkles.new(Cake.new))).pric
 The features of the cake are now separate from the cake. These means we can now
 compose a variety of different cakes with only _two_ decorators, rather
 than a number of exhaustive subclasses (CakeWithIcing, CakeWithDoubleIcing,
-CakeWithIcingAndSprinkles, CakeWithDoubleIcingAndSprinkes)
+CakeWithIcingAndSprinkles, CakeWithDoubleIcingAndSprinkles)
