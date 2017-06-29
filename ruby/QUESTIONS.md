@@ -21,6 +21,18 @@
 
 ## Answered
 
+- **What is Rack?**
+
+  _Answered by @splashinn_
+
+  *An Architecture*: Rack defines a very simple interface, and any code
+  that conforms to this interface can be used in a Rack application. This
+  makes it easy to build small, focused, and reusable bits of code and
+  then use Rack to compose these bits into a larger application.
+
+  *A Ruby Gem*: Rack is distributed as a gem that provides the glue code
+  needed to compose our code.
+
 - **How do I print all the attributes set on the class?**
 
   _Answered by @jcoglan_
